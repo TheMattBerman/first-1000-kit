@@ -1,0 +1,29 @@
+{
+  "name": "first-1000",
+  "displayName": "First 1000 GTM Agent",
+  "description": "AI GTM engineer that finds, enriches, and contacts warm leads",
+  "version": "1.0.0",
+  "author": "@themattberman",
+  "skills": [
+    "linkedin-miner",
+    "lead-enricher",
+    "icp-scorer",
+    "outreach-writer",
+    "instantly-loader"
+  ],
+  "requiredEnv": [
+    "APIFY_TOKEN",
+    "HUNTER_API_KEY"
+  ],
+  "optionalEnv": [
+    "APOLLO_API_KEY",
+    "INSTANTLY_API_KEY"
+  ],
+  "tags": [
+    "gtm",
+    "sales",
+    "lead-generation",
+    "outreach",
+    "linkedin"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "name": "Your Company Name",
+    "product": "Brief description of what you sell",
+    "website": "https://yoursite.com",
+    "value_prop": "One sentence: what problem you solve and for whom"
+  },
+  
+  "icp": {
+    "target_titles": [
+      "VP Marketing",
+      "Head of Growth",
+      "CMO",
+      "Founder",
+      "CEO"
+    ],
+    "target_industries": [
+      "SaaS",
+      "E-commerce",
+      "Technology",
+      "Marketing Agency"
+    ],
+    "company_size": {
+      "min": 10,
+      "max": 500,
+      "ideal": "50-200 employees"
+    },
+    "keywords": [
+      "AI",
+      "automation",
+      "marketing",
+      "growth"
+    ],
+    "exclude_titles": [
+      "Student",
+      "Intern",
+      "Looking for work",
+      "Open to opportunities"
+    ],
+    "exclude_companies": [
+      "Unemployed",
+      "Freelance"
+    ]
+  },
+  
+  "outreach": {
+    "sender_name": "Your Name",
+    "sender_title": "Your Title",
+    "tone": "professional but conversational",
+    "cta": "book a call",
+    "calendar_link": "https://calendly.com/you",
+    "pain_points": [
+      "Pain point 1 your product solves",
+      "Pain point 2 your product solves"
+    ],
+    "proof_points": [
+      "Social proof or result you can reference",
+      "Another proof point"
+    ]
+  },
+  
+  "linkedin_mining": {
+    "topics": [
+      "AI marketing automation",
+      "growth hacking",
+      "marketing AI tools"
+    ],
+    "influencers_to_monitor": [
+      "influencer_handle_1",
+      "influencer_handle_2"
+    ],
+    "competitors": [
+      "competitor_handle_1"
+    ]
+  }
+}

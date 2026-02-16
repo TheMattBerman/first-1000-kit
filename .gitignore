@@ -1,0 +1,30 @@
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# User configuration (contains their ICP/brand)
+brand-config.json
+
+# Run outputs
+output/
+state/
+memory/
+
+# Personal/marketing files (not part of public kit)
+email-sequence.md
+landing-page-copy.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
