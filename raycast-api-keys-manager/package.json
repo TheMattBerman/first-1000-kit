@@ -1,0 +1,44 @@
+{
+  "$schema": "https://www.raycast.com/downloads/extension.schema.json",
+  "name": "raycast-api-keys-manager",
+  "title": "API Keys Manager",
+  "description": "Manage API keys securely, import and export via CSV.",
+  "icon": "command-icon.png",
+  "author": "chris",
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Manage API Keys",
+      "description": "Manage, Add, Import, Export your API Keys",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.79.0",
+    "@raycast/utils": "^1.16.3",
+    "@types/react-dom": "^19.2.3",
+    "csv-parse": "^5.5.6",
+    "csv-stringify": "^6.5.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/react": "^19.2.14",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
