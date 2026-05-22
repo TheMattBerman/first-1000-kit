@@ -345,7 +345,8 @@ Subject: [Personalized based on context]
 | **Apollo.io** | Backup enrichment | Free | Optional |
 | **Instantly.ai** | Email sending | $30/mo | ✅ Yes |
 | **Perplexity** | Pre-call research | $20/mo | Optional |
-| **Apify** | Twitter/X scraping | ~$30/mo | Optional |
+| **TweetClaw** | X/Twitter tweet search, reply search, follower export, monitors | Account dependent | Optional |
+| **Apify** | Raw Twitter/X scraping | ~$30/mo | Optional |
 
 **Total Monthly Cost:** ~$60-130  
 **vs GTM Engineer:** $150,000/year ($12,500/month)

@@ -19,6 +19,7 @@ You need accounts with these services (free tiers work to start):
 |---------|----------|--------|
 | Apollo.io | Backup enrichment | [apollo.io](https://apollo.io) → Free: 50 credits/mo |
 | Perplexity | Pre-call research | [perplexity.ai](https://perplexity.ai) → $20/mo Pro |
+| TweetClaw | X/Twitter search, replies, followers, monitors | [github.com/Xquik-dev/tweetclaw](https://github.com/Xquik-dev/tweetclaw) |
 
 ---
 
@@ -41,6 +42,7 @@ INSTANTLY_API_KEY=your_key_here
 # Optional
 APOLLO_API_KEY=your_key_here
 PERPLEXITY_API_KEY=your_key_here
+XQUIK_API_KEY=your_key_here
 ```
 
 ---
@@ -128,6 +130,18 @@ Then just message it:
 "Write outreach for A-tier"
 "Load to Instantly"
 ```
+
+### Optional X/Twitter Source Setup
+
+Install TweetClaw only if your GTM workflow needs X/Twitter signals before enrichment:
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+openclaw config set plugins.entries.tweetclaw.config.apiKey "$XQUIK_API_KEY"
+openclaw config set tools.alsoAllow '["explore", "tweetclaw"]'
+```
+
+Then ask OpenClaw to search tweets, search tweet replies, export followers, look up users, or monitor launch keywords. Save reviewed tweet URLs, handles, and why each account matters before moving leads into enrichment.
 
 ---
 
