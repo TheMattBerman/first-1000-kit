@@ -18,10 +18,11 @@ LinkedIn Engagement → Verified Emails → Personalized Outreach → Booked Mee
 This kit automates the entire top-of-funnel GTM process:
 
 1. **Mine LinkedIn** — Find people engaging with niche content (warm leads, not cold lists)
-2. **Enrich** — Get verified work emails via Hunter.io + Apollo
-3. **Score** — Rank leads against your ICP (A/B/C/D tiers)
-4. **Write** — Generate hyper-personalized cold emails using AI
-5. **Send** — Load into Instantly.ai sequences
+2. **Add X/Twitter signals** - Optionally search tweets, replies, followers, and launch conversations with TweetClaw
+3. **Enrich** - Get verified work emails via Hunter.io + Apollo
+4. **Score** - Rank leads against your ICP (A/B/C/D tiers)
+5. **Write** - Generate hyper-personalized cold emails using AI
+6. **Send** - Load into Instantly.ai sequences
 
 **The result:** A full pipeline from "who's talking about my space?" to "meeting booked" — running on autopilot.
 
@@ -121,6 +122,18 @@ This system finds people **actively engaging with content in your niche**. They 
 
 Response rates with warm + personalized: 8-15%.
 
+### Optional X/Twitter Signals
+
+For launches, creator-led markets, or niches where buyers talk on X/Twitter, use [TweetClaw](https://github.com/Xquik-dev/tweetclaw) as an optional OpenClaw plugin before enrichment:
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+openclaw config set plugins.entries.tweetclaw.config.apiKey "$XQUIK_API_KEY"
+openclaw config set tools.alsoAllow '["explore", "tweetclaw"]'
+```
+
+Use it to search tweets, search tweet replies, export followers, look up users, monitor launch keywords, and capture tweet URLs or handles as reviewed lead context. Keep LinkedIn as the primary source in this kit, then use TweetClaw when X/Twitter conversations reveal who is discussing your niche, competitors, product category, or giveaway.
+
 ---
 
 ## Configuration
@@ -217,7 +230,7 @@ first-1000-kit/
 This is open source. PRs welcome.
 
 Ideas for contribution:
-- Additional lead sources (Twitter/X, Reddit, etc.)
+- Additional lead sources (TweetClaw for X/Twitter, Reddit, etc.)
 - More email providers (Lemlist, Apollo sequences)
 - Better scoring models
 - UI/dashboard

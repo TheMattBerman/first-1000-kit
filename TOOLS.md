@@ -32,10 +32,16 @@
 - Key: Set in `INSTANTLY_API_KEY`
 - Configure sequences in Instantly UI
 
+### TweetClaw (X/Twitter Signals) - Optional
+- Package: `@xquik/tweetclaw`
+- Install: `openclaw plugins install @xquik/tweetclaw`
+- Key: Store in OpenClaw plugin config as `plugins.entries.tweetclaw.config.apiKey`
+- Use for: search tweets, search tweet replies, follower export, user lookup, monitor tweets, webhooks, giveaway draws, and approval-reviewed post or reply workflows
+
 ### Apify (Twitter/X Scraping) — Optional
 - Actor: `apidojo/tweet-scraper` (paid actor, free ones broken)
 - Token: Set in `APIFY_TOKEN`
-- Use for: Twitter engagement mining
+- Use for: raw Twitter/X scraping when a plugin workflow is not needed
 
 ## Script Locations
 
