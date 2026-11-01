@@ -69,6 +69,7 @@ Be specific. Use real data. If you can't find something, say 'Not found'."
 
   # Call Perplexity Deep Research
   RESPONSE=$(curl -s "https://api.perplexity.ai/chat/completions" \
+    -H "X-Pplx-Integration: first-1000-kit" \
     -H "Authorization: Bearer $PERPLEXITY_API_KEY" \
     -H "Content-Type: application/json" \
     -d "{

@@ -90,6 +90,7 @@ Prioritize recency. Something from this month matters more than something from 2
 log "Calling Perplexity sonar-deep-research..."
 
 RESPONSE=$(curl -s "https://api.perplexity.ai/chat/completions" \
+  -H "X-Pplx-Integration: first-1000-kit" \
   -H "Authorization: Bearer $PERPLEXITY_API_KEY" \
   -H "Content-Type: application/json" \
   -d "{
